@@ -10,7 +10,7 @@ URL:		https://github.com/pyvista/pyacvd
 Source0:	https://pypi.io/packages/source/p/%{module}/%{module}-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(python)
-BuildRequires:	pkgconfig(cython)
+BuildRequires:	python3dist(cython)
 BuildRequires:	python3dist(setuptools)
 
 %files
