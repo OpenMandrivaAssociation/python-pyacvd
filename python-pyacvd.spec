@@ -11,6 +11,7 @@ Source0:	https://pypi.io/packages/source/p/%{module}/%{module}-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python3dist(cython)
+BuildRequires:	python3dist(numpy)
 BuildRequires:	python3dist(setuptools)
 
 %files
