@@ -1,15 +1,12 @@
-%global module	pyacvd
-%global fname %(m=%{module}; echo ${m:0:1})
-
 Summary:	A Python implementation of surface mesh resampling algorithm ACVD
-Name:		python-%{module}
-Version:	0.2.8
+Name:		python-pyacvd
+Version:	0.2.9
 Release:	1
 Group:		Development/Python
 License:	MIT
 URL:		https://github.com/pyvista/pyacvd
-Source0:	https://github.com/pyvista/%{module}/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
-#Source0:	https://pypi.io/packages/source/%{fname}/%{module}/%{module}-%{version}.tar.gz
+Source0:	https://github.com/pyvista/pyacvd/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
+#Source0:	https://pypi.io/packages/source/p/pyacvd/pyacvd-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python3dist(cython)
@@ -21,8 +18,8 @@ BuildRequires:	python3dist(wheel)
 %files
 %license LICENSE
 %doc README.rst
-%{py_platsitedir}/%{module}/
-%{py_platsitedir}/%{module}-%{version}.dist-info/
+%{py_platsitedir}/pyacvd/
+%{py_platsitedir}/pyacvd-%{version}-py%{python_version}.egg-info/
 
 #----------------------------------------------------------------------------
 
@@ -32,7 +29,7 @@ voronoi clustering. This approach is loosely based on research by S. Valette,
 and J. M. Chassery in ACVD.
 
 %prep
-%autosetup -n %{module}-%{version}
+%autosetup -n pyacvd-%{version}
 
 %build
 %py_build
