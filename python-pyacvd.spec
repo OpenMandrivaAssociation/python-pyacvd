@@ -19,7 +19,7 @@ BuildRequires:	python3dist(wheel)
 %license LICENSE
 %doc README.rst
 %{py_platsitedir}/pyacvd/
-%{py_platsitedir}/pyacvd-%{version}-py%{python_version}.egg-info/
+%{py_platsitedir}/pyacvd-*.*-info/
 
 #----------------------------------------------------------------------------
 
