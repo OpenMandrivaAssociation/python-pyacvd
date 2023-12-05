@@ -1,6 +1,6 @@
 Summary:	A Python implementation of surface mesh resampling algorithm ACVD
 Name:		python-pyacvd
-Version:	0.2.9
+Version:	0.2.10
 Release:	1
 Group:		Development/Python
 License:	MIT
